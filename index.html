@@ -38,7 +38,7 @@
 			<input type="text" id="text" autocomplete="off" placeholder="Type the word here..."
 				onkeypress="return preventSpace(event)" />
 
-			<p class="time-container">Time left: <span id="time">15s</span></p>
+			<p class="time-container">Time left: <span id="time">10s</span></p>
 			<p class="score-container">Your Score: <span id="score">0</span></p>
 
 			<div id="end-game-container" class="end-game-container"></div>
@@ -48,7 +48,6 @@
 			<div class="user">
 				<select name="catagories" id="catagories">
 					<option value="choose">Choose Your Catagories</option>
-					<option value="Ck">ck</option>
 					<option value="Birds">Birds</option>
 					<option value="Animals">Animals</option>
 					<option value="Fruits">Fruits</option>
@@ -58,12 +57,12 @@
 				<span></span>
 				<select name="difficulty" id="difficulty">
 					<option value="choose">Choose Your Difficulty</option>
-					<option value="Easy">Easy (+3)</option>
-					<option value="Medium">Medium (+2)</option>
-					<option value="Hard">Hard (+1)</option>
+					<option value="Easy">Easy (+3s)</option>
+					<option value="Medium">Medium (+2s)</option>
+					<option value="Hard">Hard (+1s)</option>
 				</select>
 			</div>
-			<p class="msg" id="msg"></p>
+			<p class="msg" id="msg">You can skip word pressing 'space' but it will decrease times -2s</p>
 			<button class="start" id="start">Start Typing</button>
 		</div>
 

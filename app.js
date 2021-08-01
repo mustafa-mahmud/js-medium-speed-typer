@@ -58,7 +58,7 @@ const words = {
     'koala',
     'hyna',
     'chita',
-    'elephan',
+    'elephant',
     'khangaroo',
   ],
   birds: [
@@ -123,7 +123,7 @@ let user = 'birds';
 let random3Nums = [];
 let tempNums = [];
 let scores = 0;
-let times = 5;
+let times = 10;
 let addTimes = 0;
 let stopTime;
 let highestScore = {
@@ -160,8 +160,9 @@ const gameOver = () => {
   //back to init
   catagories.value = difficulty.value = 'choose';
   scores = 0;
-  times = 5;
+  times = 10;
   scoreEl.textContent = 0;
+  text.blur();
 };
 
 const timesFunc = () => {
