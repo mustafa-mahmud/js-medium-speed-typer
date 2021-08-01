@@ -162,6 +162,7 @@ const gameOver = () => {
   scores = 0;
   times = 10;
   scoreEl.textContent = 0;
+  text.value = '';
   text.blur();
 };
 
